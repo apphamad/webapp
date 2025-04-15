@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recensement Association - Accueil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar-custom {
+      background-color: #00bf63;
+    }
+
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #e8be21ff;
+    }
+
+    .hero {
+      background: none;
+      color: #000000;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-access {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #e8be21ff;
+      border: none;
+      color: #0c6938;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-access:hover {
+      background-color: #ffd700;
+      color: #0a4d28;
+    }
+
+    /* CLIGNOTEMENT */
+    @keyframes clignoter {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .btn-clignotant {
+      animation: clignoter 1s infinite;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .footer {
+      background-color: #0c6938;
+      color: #f9fbfdff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #e8be21ff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="#">Recensement Association</a>
+      <div>
+        <a class="nav-link" href="#">Connexion</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Bienvenue dans votre espace de gestion</h1>
+        <p>Gérez facilement vos membres, ajoutez de nouveaux inscrits et suivez votre association en toute simplicité.</p>
+        <a href="http://178.18.250.88:8000/" class="btn btn-access btn-clignotant">Accéder à l'application</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Recensement Association. Tous droits réservés.</p>
+    <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+  </footer>
+
+</body>
+</html>
